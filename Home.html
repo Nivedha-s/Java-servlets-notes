@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Note-Maker</title>
+<style>
+#rc{
+  border-radius:10px;
+  background:#f4ebfa;
+  padding : 25px;
+}
+</style>
+
+</head>
+<body style="background-color:#d4b6fa;">
+<div class="container pt-4 " id="rc">
+<h2 style="text-align:center">Note-Maker</h2>
+<br>
+
+<form action="servlet2" method="post">
+  <label for="date">Date</label><br>
+  <input type="date" name="date" placeholder="Enter date"><br><br>
+  
+  <label for="title">Title</label><br>
+  <input type="text"  name="title" placeholder="Enter note title" ><br><br>
+  
+  <label for="desc">Description</label><br>
+  <input type="text" name="desc" placeholder="Enter description"><br><br>
+  
+  <label for="priority">Priority</label>
+  <input type="radio" name="priority" value="low">low
+  <input type="radio" name="priority" value="medium">medium
+  <input type="radio" name="priority" value="high">high<br><br>
+  
+  <input type="submit" value="Submit" >
+</form>
+
+<div id="notes"></div>
+</div>
+</body>
+</html>
